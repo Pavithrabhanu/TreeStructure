@@ -1,0 +1,81 @@
+.main-container-parent {
+    /* Add your styling for the main container here */
+  }
+  
+  .additional-data-container {
+    /* Add your styling for the additional data container here */
+  }
+  .additional-data{
+    border: 2px solid #cecece;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 10px 0 10px 0;
+    line-height: 22px;
+    letter-spacing: 1px;
+  }
+  /* Other styles */
+  .highlight {
+    font-weight: bold;
+    background-color: transparent;
+  }
+  
+  .node-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: 32px;
+  }
+  
+  .arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    margin-right: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .right {
+    transform: rotate(45deg);
+  }
+  
+  .down {
+    transform: rotate(135deg);
+  }
+  
+  .sub-child {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .wrapper.dragging {
+    opacity: 0.5;
+  }
+  
+  .parent-node .node-label-text{
+    text-transform: uppercase;
+    padding-left: 10px;
+  }
+  .children .node-label-text{
+    text-transform: capitalize;
+  }
+  .children{
+    margin: 10px;
+  }
+  .node-label.leaf-node {
+    margin-left: 30px;
+  }
+
+  .tree-node .node-label.text-highlight .node-label-text {
+   font-weight: bold; /* Highlight color for text */
+  }
+  
+  .tree-node .children.text-highlight .node-label-text {
+    font-weight: bold /* Ensure child nodes are also highlighted */
+  }
+  
+  .tree-node.highlighted .node-label-text {
+    font-weight: bold /* Highlight color for the entire node when it is highlighted */
+  }
+  /* Add other styles here as needed */

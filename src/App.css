@@ -1,38 +1,39 @@
+/* Default Light Theme */
+body.light {
+  background-color: #d0eef5;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: sans-serif;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 3px solid #e0e0e0;
+  width: 50%;
+  margin: 0 auto;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/* Light Theme */
+.App.light {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Dark Theme */
+.App.dark {
+  background-color: #444444;
+  color: #ffffff;
 }
+
+
